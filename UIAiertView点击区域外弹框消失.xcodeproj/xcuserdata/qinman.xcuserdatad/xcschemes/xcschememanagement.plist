@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>UIAiertView点击区域外弹框消失.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>3960766E1BFEC73700983B75</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>396076871BFEC73700983B75</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>396076921BFEC73800983B75</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
