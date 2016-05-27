@@ -7,8 +7,9 @@
 //
 
 #import "ViewController.h"
+#import "UIAlertView+Disappear.h"
 
-@interface ViewController ()
+@interface ViewController ()<UIAlertViewDelegate>
 
 @end
 
@@ -16,12 +17,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeContactAdd];
+    btn.frame = CGRectMake(10, 100, 100, 100);
+    [btn setTitle:@"click" forState:UIControlStateNormal];
+    [self.view addSubview:btn];
+    [btn addTarget:self action:@selector(makeAlert) forControlEvents:UIControlEventTouchUpInside];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)makeAlert {
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil message:@"点击区域外弹框消失" delegate:self cancelButtonTitle:@"cancle" otherButtonTitles:@"confirm", nil];
+    [alert show];
+    [alert disappearAlertView];
 }
 
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+    NSLog(@"点击的是--%zd",buttonIndex);
+}
 @end

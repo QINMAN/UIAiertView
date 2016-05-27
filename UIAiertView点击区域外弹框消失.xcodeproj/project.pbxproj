@@ -13,8 +13,7 @@
 		3960767D1BFEC73700983B75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3960767B1BFEC73700983B75 /* Main.storyboard */; };
 		3960767F1BFEC73700983B75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3960767E1BFEC73700983B75 /* Assets.xcassets */; };
 		396076821BFEC73700983B75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 396076801BFEC73700983B75 /* LaunchScreen.storyboard */; };
-		3960768D1BFEC73800983B75 /* UIAiertView_________Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3960768C1BFEC73800983B75 /* UIAiertView_________Tests.m */; };
-		396076981BFEC73800983B75 /* UIAiertView_________UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 396076971BFEC73800983B75 /* UIAiertView_________UITests.m */; };
+		396076A81BFEC80C00983B75 /* UIAlertView+Disappear.m in Sources */ = {isa = PBXBuildFile; fileRef = 396076A71BFEC80C00983B75 /* UIAlertView+Disappear.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,11 +45,9 @@
 		396076811BFEC73700983B75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		396076831BFEC73700983B75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		396076881BFEC73700983B75 /* UIAiertView点击区域外弹框消失Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UIAiertView点击区域外弹框消失Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3960768C1BFEC73800983B75 /* UIAiertView_________Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIAiertView_________Tests.m"; sourceTree = "<group>"; };
-		3960768E1BFEC73800983B75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		396076931BFEC73800983B75 /* UIAiertView点击区域外弹框消失UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UIAiertView点击区域外弹框消失UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		396076971BFEC73800983B75 /* UIAiertView_________UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIAiertView_________UITests.m"; sourceTree = "<group>"; };
-		396076991BFEC73800983B75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		396076A61BFEC80C00983B75 /* UIAlertView+Disappear.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+Disappear.h"; sourceTree = "<group>"; };
+		396076A71BFEC80C00983B75 /* UIAlertView+Disappear.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Disappear.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,8 +79,6 @@
 			isa = PBXGroup;
 			children = (
 				396076711BFEC73700983B75 /* UIAiertView点击区域外弹框消失 */,
-				3960768B1BFEC73800983B75 /* UIAiertView点击区域外弹框消失Tests */,
-				396076961BFEC73800983B75 /* UIAiertView点击区域外弹框消失UITests */,
 				396076701BFEC73700983B75 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -101,6 +96,7 @@
 		396076711BFEC73700983B75 /* UIAiertView点击区域外弹框消失 */ = {
 			isa = PBXGroup;
 			children = (
+				396076A51BFEC76600983B75 /* 类别 */,
 				396076751BFEC73700983B75 /* AppDelegate.h */,
 				396076761BFEC73700983B75 /* AppDelegate.m */,
 				396076781BFEC73700983B75 /* ViewController.h */,
@@ -122,22 +118,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		3960768B1BFEC73800983B75 /* UIAiertView点击区域外弹框消失Tests */ = {
+		396076A51BFEC76600983B75 /* 类别 */ = {
 			isa = PBXGroup;
 			children = (
-				3960768C1BFEC73800983B75 /* UIAiertView_________Tests.m */,
-				3960768E1BFEC73800983B75 /* Info.plist */,
+				396076A61BFEC80C00983B75 /* UIAlertView+Disappear.h */,
+				396076A71BFEC80C00983B75 /* UIAlertView+Disappear.m */,
 			);
-			path = "UIAiertView点击区域外弹框消失Tests";
-			sourceTree = "<group>";
-		};
-		396076961BFEC73800983B75 /* UIAiertView点击区域外弹框消失UITests */ = {
-			isa = PBXGroup;
-			children = (
-				396076971BFEC73800983B75 /* UIAiertView_________UITests.m */,
-				396076991BFEC73800983B75 /* Info.plist */,
-			);
-			path = "UIAiertView点击区域外弹框消失UITests";
+			path = "类别";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,6 +260,7 @@
 				3960767A1BFEC73700983B75 /* ViewController.m in Sources */,
 				396076771BFEC73700983B75 /* AppDelegate.m in Sources */,
 				396076741BFEC73700983B75 /* main.m in Sources */,
+				396076A81BFEC80C00983B75 /* UIAlertView+Disappear.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,7 +268,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3960768D1BFEC73800983B75 /* UIAiertView_________Tests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,7 +275,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				396076981BFEC73800983B75 /* UIAiertView_________UITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,6 +482,7 @@
 				3960769E1BFEC73800983B75 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3960769F1BFEC73800983B75 /* Build configuration list for PBXNativeTarget "UIAiertView点击区域外弹框消失Tests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +491,7 @@
 				396076A11BFEC73800983B75 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		396076A21BFEC73800983B75 /* Build configuration list for PBXNativeTarget "UIAiertView点击区域外弹框消失UITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +500,7 @@
 				396076A41BFEC73800983B75 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

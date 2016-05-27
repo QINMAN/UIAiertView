@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface UIAlertView (Disappear)
-
+/*点击AlertView区域外使AlertView消失*/
+- (void)disappearAlertView;
 @end
