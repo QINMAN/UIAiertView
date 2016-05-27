@@ -17,6 +17,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    NSLog(@"git测试");
+    
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeContactAdd];
     btn.frame = CGRectMake(10, 100, 100, 100);
     [btn setTitle:@"click" forState:UIControlStateNormal];
