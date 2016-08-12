@@ -49,6 +49,7 @@
     return vc;
 }
 
+//获取视图所在的控制器
 - (UIViewController *)parentController:(UIView *)view
 {
     UIResponder *responder = [view nextResponder];
