@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "UIAlertView+Disappear.h"
+#import "UIAlertController+BackDisappear.h"
 
 @interface ViewController ()<UIAlertViewDelegate>
 
@@ -17,22 +17,27 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSLog(@"git测试");
-//    NSRunLoop
-    UIButton *btn = [UIButton buttonWithType:UIButtonTypeContactAdd];
-    btn.frame = CGRectMake(10, 100, 100, 100);
-    [btn setTitle:@"click" forState:UIControlStateNormal];
-    [self.view addSubview:btn];
-    [btn addTarget:self action:@selector(makeAlert) forControlEvents:UIControlEventTouchUpInside];
+    
+    UIButton *newBtn = [UIButton buttonWithType:UIButtonTypeContactAdd];
+    newBtn.frame = CGRectMake(150, 100, 100, 100);
+    [newBtn setTitle:@"newClick" forState:UIControlStateNormal];
+    [self.view addSubview:newBtn];
+    [newBtn addTarget:self action:@selector(makeAlertCtrl) forControlEvents:UIControlEventTouchUpInside];
 }
 
-- (void)makeAlert {
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil message:@"点击区域外弹框消失" delegate:self cancelButtonTitle:@"cancle" otherButtonTitles:@"confirm", nil];
-    [alert show];
-    [alert disappearAlertView];
+- (void)makeAlertCtrl {
+
+    UIAlertController *alertCtrl = [UIAlertController alertControllerWithTitle:nil message:@"点击区域外弹框消失" preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *confirmAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        NSLog(@"点击的是确定");
+    }];
+    UIAlertAction *cancleAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        NSLog(@"点击的是取消");
+    }];
+    [alertCtrl addAction:cancleAction];
+    [alertCtrl addAction:confirmAction];
+    [alertCtrl show];
+
 }
 
-- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
-    NSLog(@"点击的是--%zd",buttonIndex);
-}
 @end

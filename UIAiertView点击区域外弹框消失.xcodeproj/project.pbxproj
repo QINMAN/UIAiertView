@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		395BD4B31D5D69FA00E864D3 /* UIAlertController+BackDisappear.m in Sources */ = {isa = PBXBuildFile; fileRef = 395BD4B21D5D69FA00E864D3 /* UIAlertController+BackDisappear.m */; };
+		395BD4B61D5DA58F00E864D3 /* OneVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 395BD4B51D5DA58F00E864D3 /* OneVC.m */; };
 		396076741BFEC73700983B75 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 396076731BFEC73700983B75 /* main.m */; };
 		396076771BFEC73700983B75 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 396076761BFEC73700983B75 /* AppDelegate.m */; };
 		3960767A1BFEC73700983B75 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 396076791BFEC73700983B75 /* ViewController.m */; };
 		3960767D1BFEC73700983B75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3960767B1BFEC73700983B75 /* Main.storyboard */; };
 		3960767F1BFEC73700983B75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3960767E1BFEC73700983B75 /* Assets.xcassets */; };
 		396076821BFEC73700983B75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 396076801BFEC73700983B75 /* LaunchScreen.storyboard */; };
-		396076A81BFEC80C00983B75 /* UIAlertView+Disappear.m in Sources */ = {isa = PBXBuildFile; fileRef = 396076A71BFEC80C00983B75 /* UIAlertView+Disappear.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		395BD4B11D5D69FA00E864D3 /* UIAlertController+BackDisappear.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+BackDisappear.h"; sourceTree = "<group>"; };
+		395BD4B21D5D69FA00E864D3 /* UIAlertController+BackDisappear.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+BackDisappear.m"; sourceTree = "<group>"; };
+		395BD4B41D5DA58F00E864D3 /* OneVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneVC.h; sourceTree = "<group>"; };
+		395BD4B51D5DA58F00E864D3 /* OneVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneVC.m; sourceTree = "<group>"; };
 		3960766F1BFEC73700983B75 /* UIAiertView点击区域外弹框消失.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UIAiertView点击区域外弹框消失.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		396076731BFEC73700983B75 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		396076751BFEC73700983B75 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -46,8 +51,6 @@
 		396076831BFEC73700983B75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		396076881BFEC73700983B75 /* UIAiertView点击区域外弹框消失Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UIAiertView点击区域外弹框消失Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		396076931BFEC73800983B75 /* UIAiertView点击区域外弹框消失UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UIAiertView点击区域外弹框消失UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		396076A61BFEC80C00983B75 /* UIAlertView+Disappear.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+Disappear.h"; sourceTree = "<group>"; };
-		396076A71BFEC80C00983B75 /* UIAlertView+Disappear.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Disappear.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,8 @@
 				396076761BFEC73700983B75 /* AppDelegate.m */,
 				396076781BFEC73700983B75 /* ViewController.h */,
 				396076791BFEC73700983B75 /* ViewController.m */,
+				395BD4B41D5DA58F00E864D3 /* OneVC.h */,
+				395BD4B51D5DA58F00E864D3 /* OneVC.m */,
 				3960767B1BFEC73700983B75 /* Main.storyboard */,
 				3960767E1BFEC73700983B75 /* Assets.xcassets */,
 				396076801BFEC73700983B75 /* LaunchScreen.storyboard */,
@@ -121,8 +126,8 @@
 		396076A51BFEC76600983B75 /* 类别 */ = {
 			isa = PBXGroup;
 			children = (
-				396076A61BFEC80C00983B75 /* UIAlertView+Disappear.h */,
-				396076A71BFEC80C00983B75 /* UIAlertView+Disappear.m */,
+				395BD4B11D5D69FA00E864D3 /* UIAlertController+BackDisappear.h */,
+				395BD4B21D5D69FA00E864D3 /* UIAlertController+BackDisappear.m */,
 			);
 			path = "类别";
 			sourceTree = "<group>";
@@ -259,8 +264,9 @@
 			files = (
 				3960767A1BFEC73700983B75 /* ViewController.m in Sources */,
 				396076771BFEC73700983B75 /* AppDelegate.m in Sources */,
+				395BD4B31D5D69FA00E864D3 /* UIAlertController+BackDisappear.m in Sources */,
+				395BD4B61D5DA58F00E864D3 /* OneVC.m in Sources */,
 				396076741BFEC73700983B75 /* main.m in Sources */,
-				396076A81BFEC80C00983B75 /* UIAlertView+Disappear.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
