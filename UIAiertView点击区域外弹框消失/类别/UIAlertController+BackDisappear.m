@@ -35,7 +35,7 @@
 //拿到被present的控制器
 - (UIViewController *)getPresentingViewController {
     //UITextEffectsWindow : 当控制器在导航控制器下时，不管是否弹出键盘，[UIApplication sharedApplication].windows都会包含UITextEffectsWindow
-    UIWindow *currentWindow = [UIApplication sharedApplication].windows.lastObject;
+    UIWindow *currentWindow = [UIApplication sharedApplication].keyWindow;
     UIView *currentView = currentWindow.subviews.firstObject;
     UIViewController *vc = [self parentController:currentView];
     if ([vc isKindOfClass:[UITabBarController class]]) {
