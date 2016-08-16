@@ -13,7 +13,7 @@
 - (void)show {
     [self backDisappear];
     //由于还未present到当前视图控制器，所以要先拿到被present的控制器
-    [self.presentingViewController presentViewController:self animated:YES completion:nil];
+    [[self getPresentingViewController] presentViewController:self animated:YES completion:nil];
 }
 
 - (void)backDisappear {
@@ -27,15 +27,15 @@
         CGPoint location = [tap locationInView:nil];
         if (![self.view pointInside:[self.view convertPoint:location fromView:self.view.window] withEvent:nil]){
             [self.view.window removeGestureRecognizer:tap];
-//            [self dismissWithClickedButtonIndex:0 animated:YES];
             [self dismissViewControllerAnimated:YES completion:nil];
         }
     }
 }
 
 //拿到被present的控制器
-- (UIViewController *)presentingViewController {
-    UIWindow *currentWindow = [UIApplication sharedApplication].windows.firstObject;
+- (UIViewController *)getPresentingViewController {
+    //UITextEffectsWindow : 当控制器在导航控制器下时，不管是否弹出键盘，[UIApplication sharedApplication].windows都会包含UITextEffectsWindow
+    UIWindow *currentWindow = [UIApplication sharedApplication].windows.lastObject;
     UIView *currentView = currentWindow.subviews.firstObject;
     UIViewController *vc = [self parentController:currentView];
     if ([vc isKindOfClass:[UITabBarController class]]) {

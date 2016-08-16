@@ -12,5 +12,4 @@
 
 - (void)show;
 
-- (void)backDisappear;
 @end

@@ -7,7 +7,6 @@
 //
 
 #import "ViewController.h"
-#import "UIAlertController+BackDisappear.h"
 
 @interface ViewController ()<UIAlertViewDelegate>
 
@@ -17,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+
     UIButton *newBtn = [UIButton buttonWithType:UIButtonTypeContactAdd];
     newBtn.frame = CGRectMake(150, 100, 100, 100);
     [newBtn setTitle:@"newClick" forState:UIControlStateNormal];
@@ -36,7 +35,7 @@
     }];
     [alertCtrl addAction:cancleAction];
     [alertCtrl addAction:confirmAction];
-    [alertCtrl show];
+    [alertCtrl performSelector:@selector(show)];
 
 }
 
